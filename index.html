@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResellBuddy — Coming Soon | Poshmark Automation Tool</title>
+    <meta name="description" content="The #1 Poshmark automation tool. Auto-share, auto-like, auto-follow. Join the waitlist for exclusive launch pricing.">
+    <meta property="og:title" content="ResellBuddy — Poshmark Automation Made Easy">
+    <meta property="og:description" content="Automate your Poshmark reselling. Auto-share, auto-like, auto-follow with smart scheduling.">
+    <meta property="og:url" content="https://resellbuddy.pages.dev">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://resellbuddy.pages.dev">
+    <style>
+        :root{--bg:#0d1117;--text:#e6edf3;--dim:#8b949e;--green:#3fb950;--card:#161b22;--border:#30363d;--purple:#a371f7}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+        .container{max-width:800px;margin:0 auto;padding:40px 24px}
+        .hero{text-align:center;padding:80px 0 40px}
+        .badge{display:inline-block;background:rgba(63,185,80,0.15);color:var(--green);padding:6px 16px;border-radius:20px;font-size:14px;font-weight:600;margin-bottom:24px}
+        h1{font-size:48px;font-weight:800;margin-bottom:16px;background:linear-gradient(135deg,var(--green),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .tagline{font-size:20px;color:var(--dim);margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto}
+        .cta-form{display:flex;gap:12px;max-width:500px;margin:0 auto 20px}
+        .cta-form input{flex:1;padding:14px 18px;background:var(--card);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:16px}
+        .cta-form button{padding:14px 28px;background:var(--green);color:#fff;border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer}
+        .cta-form button:hover{background:#2ea043}
+        .waitlist-count{color:var(--dim);font-size:14px;margin-bottom:60px}
+        .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-bottom:60px}
+        .feature{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px}
+        .feature h3{font-size:16px;margin-bottom:8px}
+        .feature p{color:var(--dim);font-size:14px}
+        .pricing{background:var(--card);border:2px solid var(--green);border-radius:16px;padding:40px;text-align:center;margin-bottom:60px}
+        .pricing h2{font-size:24px;margin-bottom:8px}
+        .price{font-size:48px;font-weight:800;color:var(--green);margin:16px 0}
+        .price span{font-size:16px;color:var(--dim)}
+        .pricing ul{list-style:none;text-align:left;max-width:300px;margin:20px auto}
+        .pricing li{padding:8px 0;color:var(--dim);font-size:15px}
+        .pricing li::before{content:"✓ ";color:var(--green);font-weight:bold}
+        .competitors{margin-bottom:60px}
+        .competitors h2{text-align:center;margin-bottom:24px;font-size:22px}
+        .comp-table{width:100%;border-collapse:collapse}
+        .comp-table th,.comp-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--border)}
+        .comp-table th{color:var(--dim);font-size:13px;text-transform:uppercase}
+        .comp-table .highlight{background:rgba(63,185,80,0.1)}
+        .comp-table .green{color:var(--green);font-weight:600}
+        .faq{margin-bottom:60px}
+        .faq h2{text-align:center;margin-bottom:24px}
+        .faq-item{border-bottom:1px solid var(--border)}
+        .faq-q{padding:16px 0;font-weight:600;cursor:pointer;display:flex;justify-content:space-between}
+        .faq-a{padding:0 0 16px;color:var(--dim);font-size:14px;display:none}
+        .faq-item.open .faq-a{display:block}
+        footer{text-align:center;color:var(--dim);font-size:13px;padding:40px 0;border-top:1px solid var(--border)}
+        footer a{color:var(--dim);text-decoration:none;margin:0 12px}
+    </style>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"ResellBuddy","applicationCategory":"BrowserExtension","operatingSystem":"Chrome","offers":{"@type":"Offer","price":"9","priceCurrency":"USD"}}
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <div class="badge">🚀 Launching Soon</div>
+        <h1>ResellBuddy</h1>
+        <p class="tagline">Automate your Poshmark reselling. Auto-share, auto-like, auto-follow with smart scheduling. Save 2+ hours daily.</p>
+        <div class="cta-form">
+            <input type="email" id="email-input" placeholder="Join the waitlist...">
+            <button onclick="subscribe()">Get Early Access</button>
+        </div>
+        <p class="waitlist-count">Join resellers on the waitlist</p>
+    </div>
+    <div class="features">
+        <div class="feature"><h3>🔄 Auto Share</h3><p>Share your listings and followers' listings automatically. Smart timing to maximize visibility.</p></div>
+        <div class="feature"><h3>❤️ Auto Like</h3><p>Like items in your feed and search results. Get noticed by potential buyers.</p></div>
+        <div class="feature"><h3>👥 Auto Follow</h3><p>Follow users in your niche. Build your community on autopilot.</p></div>
+        <div class="feature"><h3>⏰ Scheduler</h3><p>Set it and forget it. Schedule actions for peak engagement hours.</p></div>
+    </div>
+    <div class="pricing">
+        <h2>Simple Pricing</h2>
+        <p style="color:var(--dim)">Everything you need to grow your Poshmark business</p>
+        <div class="price">$9<span>/month</span></div>
+        <ul>
+            <li>Auto-share (listings + followers)</li>
+            <li>Auto-like with smart targeting</li>
+            <li>Auto-follow community members</li>
+            <li>Custom scheduling</li>
+            <li>Analytics dashboard</li>
+            <li>Safe scroll protection</li>
+            <li>Cancel anytime</li>
+        </ul>
+    </div>
+    <div class="competitors">
+        <h2>Why ResellBuddy?</h2>
+        <table class="comp-table">
+            <tr><th>Feature</th><th>Closet Tools ($30/mo)</th><th class="highlight">ResellBuddy ($9/mo)</th></tr>
+            <tr><td>Auto Share</td><td class="green">✓</td><td class="green">✓</td></tr>
+            <tr><td>Auto Like</td><td class="green">✓</td><td class="green">✓</td></tr>
+            <tr><td>Auto Follow</td><td class="green">✓</td><td class="green">✓</td></tr>
+            <tr><td>Scheduler</td><td class="green">✓</td><td class="green">✓</td></tr>
+            <tr><td>Analytics</td><td>✗</td><td class="green">✓</td></tr>
+            <tr><td>Price</td><td>$30/month</td><td class="green">$9/month</td></tr>
+        </table>
+    </div>
+    <div class="faq">
+        <h2>FAQ</h2>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is ResellBuddy safe to use?</div><div class="faq-a">Yes! ResellBuddy includes smart scroll protection and rate limiting to keep your account safe.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can I cancel anytime?</div><div class="faq-a">Absolutely. Cancel at any time, no questions asked.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What browsers are supported?</div><div class="faq-a">Chrome, Edge, Brave, and other Chromium-based browsers.</div></div>
+    </div>
+    <footer>
+        <a href="https://devtools-site-cos.pages.dev">Free Tools</a>
+        <a href="https://github.com/Chesten223/resell-buddy">GitHub</a>
+        <a href="mailto:chesten@163.com">Contact</a>
+        <p style="margin-top:12px">&copy; 2026 Chesten. All rights reserved.</p>
+    </footer>
+</div>
+<script>
+async function subscribe(){const e=document.getElementById("email-input").value;if(!e||!e.includes("@")){alert("Please enter a valid email");return}try{await fetch("https://email-collector.chesten.workers.dev/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:e})});alert("You're on the waitlist!");document.getElementById("email-input").value=""}catch(e){alert("Something went wrong")}}
+</script>
+</body>
+</html>
