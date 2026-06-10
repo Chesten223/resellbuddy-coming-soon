@@ -115,5 +115,5 @@
 <script>
 async function subscribe(){const e=document.getElementById("email-input").value;if(!e||!e.includes("@")){alert("Please enter a valid email");return}try{await fetch("https://email-collector.chesten.workers.dev/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:e})});alert("You're on the waitlist!");document.getElementById("email-input").value=""}catch(e){alert("Something went wrong")}}
 </script>
-</body>
+<script>!function(){var i=new Image;i.src="https://email-collector.chesten.workers.dev/track?u="+encodeURIComponent(location.href)+"&r="+encodeURIComponent(document.referrer)}();</script></body>
 </html>
